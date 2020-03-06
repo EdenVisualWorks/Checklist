@@ -20,12 +20,12 @@ public class nomScript : MonoBehaviour
         valueEntered = true;
     }
 
-    public void SaveValue(string)
+    public void SaveValue(string check)
     {
         if (valueEntered == true)   
         {
             valuePresent = true;
-            QuantityField.text = PlayerPrefs.SetString("saveValue");            
+            QuantityField.text = PlayerPrefs.SetString("saveValue", check);            
         }
     }
 
